@@ -7,7 +7,9 @@ function Nav(props) {
     window.addEventListener("scroll", () => {
       if (window.scrollY > 100) {
         handleShow(true);
-      } else handleShow(false);
+      } else {
+        handleShow(false);
+      }
     });
     return () => {
       window.removeEventListener("scroll");
